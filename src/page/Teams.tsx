@@ -20,7 +20,7 @@ function Teams() {
     const clickHandler = useCallback(
         (id) => {
             history.push(`/teams/${id}`);
-        }, []
+        }, [history]
     )
     const image = LOGO_URL;
     const color = useTeamColor();
