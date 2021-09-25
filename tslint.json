@@ -9,13 +9,11 @@
     ],
     "rules": {
       "prettier": true,
-      "interface-name": false,
       "jsx-no-lambda":true,
-      "strict-type-predicates": false,
-      "ordered-imports": false,
-      "object-literal-sort-keys": false,
-      "member-ordering": false,
-      "jsx-boolean-value": false
+      "strict-type-predicates": true,
+      "ordered-imports": true,
+      "member-ordering": true,
+      "jsx-boolean-value": true
 
     }
   }

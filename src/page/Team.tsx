@@ -1,7 +1,7 @@
-import useApi from '../teamCustomHook/useApi'
+import Banner from '../components/Banner'
 import URL from '../helper/Url'
 import useTeamStyles from '../style/TeamStyle'
-import Banner from '../components/Banner'
+import useApi from '../teamCustomHook/useApi'
 interface IplayerData {
   players: [IplayerStats]
   team: { [key: string]: string }

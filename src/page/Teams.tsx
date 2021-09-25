@@ -1,11 +1,11 @@
 import { useCallback } from 'react'
-import useApi from '../teamCustomHook/useApi'
+import { FaTrophy } from 'react-icons/fa'
+import { useHistory } from 'react-router-dom'
 import LOGO_URL from '../helper/Logourl'
 import URL from '../helper/Url'
-import { useHistory } from 'react-router-dom'
-import { FaTrophy } from 'react-icons/fa'
-import useCardStyle from '../style/TeamsStyle'
 import useTeamColor from '../style/TeamsColor'
+import useCardStyle from '../style/TeamsStyle'
+import useApi from '../teamCustomHook/useApi'
 interface IteamsData {
   id: string
   teamName: string

@@ -1,6 +1,6 @@
+import { useEffect, useState } from 'react'
 import Loader from 'react-loader-spinner'
 import eventEmitter from './Event'
-import { useEffect, useState } from 'react'
 function Loading() {
   const [showLoader, setShowLoader] = useState(false)
   useEffect(() => {

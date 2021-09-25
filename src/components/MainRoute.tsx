@@ -1,5 +1,5 @@
-import { Suspense, lazy } from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { lazy, Suspense } from 'react'
+import { Route, Switch } from 'react-router-dom'
 import Error from '../page/Error'
 const Teams = lazy(() => import('../page/Teams'))
 const Team = lazy(() => import('../page/Team'))
