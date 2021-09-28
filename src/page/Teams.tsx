@@ -32,6 +32,7 @@ function Teams() {
           teamsData.data.map((team) => {
             return (
               <div
+                data-testid="TeamsCard"
                 key={team.id}
                 // tslint:disable-next-line: jsx-no-lambda
                 onClick={() => {
@@ -43,22 +44,22 @@ function Teams() {
                 <div className={classes.cardDetail}>
                   <h3 className={classes.title}>{team.teamName}</h3>
                   <p className={classes.venue}>{team.venue}</p>
-                  <p>
+                  <div>
                     {team.winningYears.length ? (
-                      <p className={classes.teamWin}>
+                      <div className={classes.teamWin}>
                         <FaTrophy />
                         {team.winningYears.map((trophy, index: number) => {
                           return (
-                            <p key={index} className={classes.trophy}>
+                            <div key={index} className={classes.trophy}>
                               {trophy},
-                            </p>
+                            </div>
                           )
                         })}
-                      </p>
+                      </div>
                     ) : (
                       <p className={classes.noTeamWin} />
                     )}
-                  </p>
+                  </div>
                   <p className={classes.home}>Team Home</p>
                 </div>
               </div>

@@ -27,7 +27,7 @@ function Team(props: Iurl) {
   const teamData = teamdata.data as IplayerData
   const classes = useTeamStyles()
   return (
-    <div className={classes.container}>
+    <div data-testid="TeamPlayerCard" className={classes.container}>
       <Banner bannerUrl={teamUrl} />
       <div className={classes.card}>
         {teamData &&

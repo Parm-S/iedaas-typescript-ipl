@@ -14,8 +14,10 @@ function App() {
     <ErrorBoundary>
       <div className="App">
         <Header />
-        <MainRoute />
-        <div className={classes.loader}>
+        <div data-testid="location">
+          <MainRoute />
+        </div>
+        <div data-testid="loading" className={classes.loader}>
           <Loading />
         </div>
       </div>
